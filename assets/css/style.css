@@ -1,12 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
+/*
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 300 to 700
+
+.mohave-<uniquifier> {
+  font-family: "Mohave", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+:root{
+  --primary-color: #001627;
+  --text-secundary: #828282;
+  --text-white: #fff;
+  --background-color-f4: #F4F0E7;
+  --bg-white: #fff;
+}
 * {
   padding: 0;
   margin: 0;
-  background-color: #001627;
-  font-family: "Mohave";
+  font-family: "Mohave", sans-serif;
 }
-#principal{
-  margin: 0 0 0 0;
-  padding: 0 5vh 0 5vh;
+
+body{
+  font-size: 1.6rem;
+  background-color: var(--primary-color);
+}
+
+h1{
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+h2{
+  font-size: 5.5rem;
+  color: var(--text-white);
+}
+
+h3{
+  font-size: 5rem;
+  color: var(--text-white);
+}
+
+h4{
+  font-size: 4.5rem;
+  color: var(--text-white);
+}
+
+h5{
+  font-size: 4rem;
+  color: var(--text-white);
+}
+
+h6{
+  font-size: 3.5rem;
+  color: var(--text-white);
+}
+
+.main-contant{
+  max-width: 1442px;
+  margin: 0 auto;
 }
 
 .container {
@@ -19,10 +75,9 @@
 .duotone {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 90rem;
-  height: 56rem;
-  position: relative;
-  background: url("img/duotone.png") no-repeat;
+  background: url("../img/duotone.png") no-repeat;
+  background-position: center center;
+  background: cover;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -34,7 +89,6 @@
 }
 
 .group-3 {
-  background: none;
   width: 46.8vh;
   height: 11.875rem;
   position: relative;
@@ -43,35 +97,32 @@
 }
 
 .group-3 h1 {
-  background: none;
-  color: #FFF;
+  color: var(--text-white);
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #000;
-  font-size: 4.875rem;
+  font-size: 8.875rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.875rem;
+  line-height: 6.875rem;
   /* 77.465% */
 }
 
 .group-3 h4 {
-  background: none;
-  color: #FFF;
+  color: var(--text-white);
   text-align: justify;
-  font-size: 1rem;
+  font-size: 2rem;
   font-style: normal;
-  font-weight: 250;
+  font-weight: 500;
   line-height: normal;
   margin-left: -0.06rem;
 }
 
 .group-3 a i {
   margin-top: 0.56rem;
-  background: none;
-  width: 1.875rem;
-  height: 1.875rem;
-  flex-shrink: 0;
-  color: #FFF;
+  margin-right: 2rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  color: var(--text-white);
 }
 
 /*
@@ -82,13 +133,13 @@ SUMMER COLLECTION
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 28rem;
-  background: #F4F0E7;
+  background: var(--background-color-f4);
   border: 1px solid red;
 }
 
 #img {
   border: 1px solid green;
-  background: url("img/Bitmap.png"), no-repeat;
+  background: url("../img/Bitmap.png"), no-repeat;
   width: 30vh;
   height: 30vh;
   position: relative;
@@ -100,7 +151,7 @@ SUMMER COLLECTION
 #summer-texts {
   position: relative;
   padding: 0 3rem 0 3rem;
-  background: #F4F0E7;
+  background: var(--background-color-f4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,10 +160,9 @@ SUMMER COLLECTION
 }
 
 #summer-texts h3 {
-  background: #F4F0E7;
-  color: #828282;
+  background: var(--background-color-f4);
+  color: var(--text-secundary);
   text-align: center;
-  font-family: Mohave;
   font-size: 33px;
   font-style: normal;
   font-weight: 700;
@@ -120,11 +170,10 @@ SUMMER COLLECTION
 }
 
 #summer-texts h2 {
-  background: #F4F0E7;
-  color: #001627;
+  background: var(--background-color-f4);
+  color: var(--primary-color);
   padding: 1rem;
   text-align: center;
-  font-family: Mohave;
   font-size: 3.625rem;
   font-style: normal;
   font-weight: 700;
@@ -132,13 +181,11 @@ SUMMER COLLECTION
 }
 
 #summer-texts p {
-  color: #001627;
+  color: var(--primary-color);
   text-align: justify;
-  font-family: Mohave;
   font-size: 12.5px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  background: none;
   padding: 0 5rem 0 5rem;
 }
