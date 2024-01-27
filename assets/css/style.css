@@ -61,7 +61,7 @@ h6 {
   color: var(--text-white);
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -96,7 +96,7 @@ a{
   list-style: none;
 }
 
-.menu ul li a{
+.menu ul li a {
   display: block;
   padding: 1.4rem;
   font-size: 1.2rem;
@@ -104,7 +104,7 @@ a{
   position: relative;
 }
 
-.menu ul li a::after{
+.menu ul li a::after {
   content: '';
   position: absolute;
   bottom: 1rem;
@@ -115,7 +115,7 @@ a{
   transition: all 300ms ease-in-out;
 }
 
-.menu ul li a:hover::after{
+.menu ul li a:hover::after {
   content: '';
   position: absolute;
   bottom: 1rem;
@@ -131,11 +131,11 @@ a{
   font-size: 2.3rem;
 }
 
-.menu h3 a{
+.menu h3 a {
   color: inherit;
 }
 
-.menu-content{
+.menu-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -149,25 +149,27 @@ a{
 .duotone {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: cover;
   background-size: 100%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: url("../img/duotone.png") no-repeat center center;
+  background: url("../img/duotone.png"), lightgray 50% / cover no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  height: 96vh;
+  width: 89.9375rem;
+  height: 90rem;
+  flex-shrink: 0;
 }
 
-.gradient{
+.gradient {
   background: linear-gradient(270deg, rgba(0, 49, 79, 0.00) 0%, #001627 69.59%);
   height: 100%;
+  flex-shrink: 0;
 }
 
 .group-3 {
-  width: 46.8vh;
-  height: 11.875rem;
+  width: 29.25rem;
+  height: 21.875rem;
+  flex-shrink: 0;
   position: relative;
   margin-top: 28.64vh;
   margin-left: 18.56vh;
@@ -177,28 +179,35 @@ a{
   color: var(--text-white);
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #000;
+  font-family: Mohave;
   font-size: 8.875rem;
   font-style: normal;
   font-weight: 700;
   line-height: 6.875rem;
   /* 77.465% */
+  width: 25.625rem;
+  height: 11rem;
+  flex-shrink: 0;
 }
 
 .group-3 h4 {
   color: var(--text-white);
   text-align: justify;
+  font-family: Mohave;
   font-size: 2rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
-  margin-left: -0.06rem;
+  width: 27.9375rem;
+  padding: 2.87rem 0 0 0;
 }
 
 .group-3 a i {
   margin-top: 0.56rem;
-  margin-right: 2rem;
-  width: 0.2rem;
-  height: 0.2rem;
+  margin-right: 1.77rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  flex-shrink: 0;
   color: var(--text-white);
 }
 
@@ -207,16 +216,17 @@ SUMMER COLLECTION
 */
 
 .summer-colection {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 28rem;
+  width: 90.125rem;
+  height: 49.875rem;
+  flex-shrink: 0;
   background: var(--background-color-f4);
   border: 1px solid red;
 }
 
 #summer-texts {
-  padding: 2rem 3rem 0 3rem;
+  margin: 8.06rem 0 0 0;
   background: var(--background-color-f4);
   display: block;
   flex-direction: column;
@@ -227,7 +237,8 @@ SUMMER COLLECTION
   background: var(--background-color-f4);
   color: var(--text-secundary);
   text-align: center;
-  font-size: 2.5rem;
+  font-family: Mohave;
+  font-size: 4.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -238,16 +249,18 @@ SUMMER COLLECTION
   color: var(--primary-color);
   padding: 1rem;
   text-align: center;
-  font-size: 4.625rem;
+  font-family: Mohave;
+  font-size: 7.625rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 4rem;
+  line-height: normal;
 }
 
 #summer-texts p {
   color: var(--primary-color);
   text-align: justify;
-  font-size: 1.2rem;
+  font-family: Mohave;
+  font-size: 1.4375rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -255,12 +268,27 @@ SUMMER COLLECTION
 }
 
 #collection-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30.3125rem;
+  height: 29.875rem;
+}
+
+.retangle {
+  background-color: var(--primary-color);
+  z-index: 0;
+  width: 26.625rem;
+  height: 26.625rem;
+  flex-shrink: 0;
 }
 
 #img {
   border: 0.2rem dashed var(--text-secundary);
-  background: url("../img/Bitmap.png"), no-repeat;
-  width: 30vh;
-  height: 30vh;
-  position: absolute;
+  background: url("../img/Bitmap.png"), lightgray -2.418px -73.714px / 100% 133.472% no-repeat;
+  width: 26.625rem;
+  width: 26.625rem;
+  height: 26.625rem;
+  flex-shrink: 0;
+  z-index: 1;
 }
