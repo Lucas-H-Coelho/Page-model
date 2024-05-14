@@ -1,0 +1,15 @@
+header{
+  grid-area: header;
+  background: blueviolet;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav{
+  margin-right: 1rem;
+}

@@ -1,0 +1,11 @@
+.content {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto 85vh auto;
+    background-color: #e7e7e7;
+}
